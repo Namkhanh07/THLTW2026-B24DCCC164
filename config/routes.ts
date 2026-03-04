@@ -42,6 +42,18 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		path: '/Bai1',
+		name: 'Doanso',
+		icon: 'OrderedListOutlined',
+		component: './TH01/Bai1',
+	},
+	{
+		path: '/Bai2',
+		name: 'QuanLyHocTap',
+		icon: 'OrderedListOutlined',
+		component: './TH01/Bai2',
+	},
 
 	// DANH MUC HE THONG
 	// {
