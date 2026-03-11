@@ -44,15 +44,15 @@
 	},
 	{
 		path: '/Bai1',
-		name: 'Doanso',
+		name: 'OanTuTi',
 		icon: 'OrderedListOutlined',
-		component: './TH01/Bai1',
+		component: './TH02/Bai1',
 	},
 	{
 		path: '/Bai2',
-		name: 'QuanLyHocTap',
+		name: 'QuanLyDeThi',
 		icon: 'OrderedListOutlined',
-		component: './TH01/Bai2',
+		component: './TH02/Bai2',
 	},
 
 	// DANH MUC HE THONG
