@@ -54,6 +54,12 @@
 		icon: 'OrderedListOutlined',
 		component: './TH02/Bai2',
 	},
+	{
+		path: '/DichVuCatToc',
+		name: 'DichVuCatToc',
+		icon: 'OrderedListOutlined',
+		component: './TH03',
+	},
 
 	// DANH MUC HE THONG
 	// {
