@@ -60,6 +60,12 @@
 		icon: 'OrderedListOutlined',
 		component: './TH03',
 	},
+	{
+		path: '/TH04',
+		name: 'TH04',
+		icon: 'OrderedListOutlined',
+		component: './TH04',
+	},
 
 	// DANH MUC HE THONG
 	// {
