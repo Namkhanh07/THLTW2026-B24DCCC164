@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -71,6 +71,12 @@
 		name: 'TH05',
 		icon: 'OrderedListOutlined',
 		component: './TH05',
+	},
+	{
+		path: '/TH06',
+		name: 'TH06',
+		icon: 'CompassOutlined',
+		component: './TH06',
 	},
 
 	// DANH MUC HE THONG
