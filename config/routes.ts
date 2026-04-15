@@ -78,6 +78,12 @@ export default [
 		icon: 'CompassOutlined',
 		component: './TH06',
 	},
+	{
+		path: '/GiuaKy',
+		name: 'GiuaKy',
+		icon: 'BookOutlined',
+		component: './GiuaKy',
+	},
 
 	// DANH MUC HE THONG
 	// {
