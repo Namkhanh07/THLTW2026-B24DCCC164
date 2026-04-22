@@ -1,0 +1,108 @@
+import type { KieuThe, KieuBaiViet } from './types';
+
+export const KHOA_LUU_TRU = {
+  BAI_VIET: 'TH07_BAI_VIET',
+  THE: 'TH07_THE',
+};
+
+export const THONG_TIN_TAC_GIA = {
+  ten: 'Trần Nam Khánh',
+  maSV: 'B24DCCC164',
+  tieuSu: 'Sinh viên ngành Công nghệ thông tin, đam mê lập trình web và thiết kế giao diện người dùng. Luôn tìm tòi và học hỏi các công nghệ mới để nâng cao kỹ năng bản thân.',
+  anhDaiDien: '',
+  kyNang: ['ReactJS', 'TypeScript', 'NodeJS', 'Ant Design', 'UmiJS', 'Git', 'HTML/CSS', 'JavaScript'],
+  lienKet: {
+    github: 'https://github.com/Namkhanh07',
+    email: 'namkhanhptvt@gmail.com',
+  },
+};
+
+export const DS_THE_MAC_DINH: KieuThe[] = [
+  { id: 'THE_001', ten: 'ReactJS', mau: '#61dafb' },
+  { id: 'THE_002', ten: 'TypeScript', mau: '#3178c6' },
+  { id: 'THE_003', ten: 'NodeJS', mau: '#68a063' },
+  { id: 'THE_004', ten: 'CSS', mau: '#264de4' },
+  { id: 'THE_005', ten: 'JavaScript', mau: '#f7df1e' },
+  { id: 'THE_006', ten: 'UmiJS', mau: '#1890ff' },
+];
+
+export const DS_BAI_VIET_MAC_DINH: KieuBaiViet[] = [
+  {
+    id: 'BV_001',
+    tieuDe: 'Bắt đầu với ReactJS - Hướng dẫn cho người mới',
+    slug: 'bat-dau-voi-reactjs',
+    tomTat: 'Tìm hiểu các khái niệm cơ bản của ReactJS: Component, Props, State và cách xây dựng ứng dụng đầu tiên.',
+    noiDung: '# Bắt đầu với ReactJS\n\nReactJS là một thư viện JavaScript phổ biến để xây dựng giao diện người dùng.\n\n## Tại sao chọn React?\n\n- **Component-based**: Chia giao diện thành các thành phần nhỏ, dễ quản lý\n- **Virtual DOM**: Hiệu suất cao nhờ cơ chế so sánh DOM ảo\n- **Cộng đồng lớn**: Hệ sinh thái phong phú với hàng nghìn thư viện hỗ trợ\n\n## Cài đặt\n\n```bash\nnpx create-react-app my-app\ncd my-app\nnpm start\n```\n\n## Component đầu tiên\n\n```jsx\nfunction Hello({ name }) {\n  return <h1>Xin chào, {name}!</h1>;\n}\n```\n\n## State và Props\n\n**Props** là dữ liệu truyền từ component cha sang con. **State** là dữ liệu nội bộ của component.\n\nChúc bạn học tốt! 🚀',
+    anhDaiDien: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop',
+    tacGia: 'Trần Nam Khánh',
+    ngayDang: '2025-04-01',
+    danhSachTheId: ['THE_001', 'THE_005'],
+    trangThai: 'daDang',
+    luotXem: 156,
+  },
+  {
+    id: 'BV_002',
+    tieuDe: 'TypeScript từ A đến Z',
+    slug: 'typescript-tu-a-den-z',
+    tomTat: 'Hướng dẫn toàn diện về TypeScript: từ kiểu dữ liệu cơ bản đến generics và decorators.',
+    noiDung: '# TypeScript từ A đến Z\n\nTypeScript là một ngôn ngữ lập trình mã nguồn mở được phát triển bởi Microsoft.\n\n## Kiểu dữ liệu cơ bản\n\n```typescript\nlet ten: string = "Khánh";\nlet tuoi: number = 20;\nlet sinhVien: boolean = true;\n```\n\n## Interface\n\n```typescript\ninterface NguoiDung {\n  ten: string;\n  tuoi: number;\n  email?: string;\n}\n```\n\n## Generics\n\n```typescript\nfunction layGiaTri<T>(mang: T[], chiSo: number): T {\n  return mang[chiSo];\n}\n```\n\nTypeScript giúp code an toàn hơn và dễ bảo trì hơn! 💪',
+    anhDaiDien: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600&h=400&fit=crop',
+    tacGia: 'Trần Nam Khánh',
+    ngayDang: '2025-04-05',
+    danhSachTheId: ['THE_002', 'THE_005'],
+    trangThai: 'daDang',
+    luotXem: 98,
+  },
+  {
+    id: 'BV_003',
+    tieuDe: 'Xây dựng REST API với NodeJS và Express',
+    slug: 'xay-dung-rest-api-nodejs',
+    tomTat: 'Hướng dẫn tạo REST API hoàn chỉnh với NodeJS, Express, và kết nối MongoDB.',
+    noiDung: '# REST API với NodeJS\n\n## Cài đặt\n\n```bash\nnpm init -y\nnpm install express mongoose\n```\n\n## Tạo server\n\n```javascript\nconst express = require("express");\nconst app = express();\n\napp.get("/api/users", (req, res) => {\n  res.json([{ id: 1, name: "Khánh" }]);\n});\n\napp.listen(3000);\n```\n\n## CRUD Operations\n\n- **GET** - Lấy dữ liệu\n- **POST** - Tạo mới\n- **PUT** - Cập nhật\n- **DELETE** - Xóa\n\nHãy thực hành xây dựng API cho dự án của bạn! 🛠️',
+    anhDaiDien: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=600&h=400&fit=crop',
+    tacGia: 'Trần Nam Khánh',
+    ngayDang: '2025-04-10',
+    danhSachTheId: ['THE_003', 'THE_005'],
+    trangThai: 'daDang',
+    luotXem: 73,
+  },
+  {
+    id: 'BV_004',
+    tieuDe: 'CSS Grid và Flexbox - So sánh chi tiết',
+    slug: 'css-grid-va-flexbox',
+    tomTat: 'Phân tích ưu nhược điểm của CSS Grid và Flexbox, khi nào nên dùng cái nào.',
+    noiDung: '# CSS Grid vs Flexbox\n\n## Flexbox\n\nFlexbox hoạt động theo **1 chiều** (hàng hoặc cột).\n\n```css\n.container {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n```\n\n## Grid\n\nGrid hoạt động theo **2 chiều** (hàng và cột).\n\n```css\n.container {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 16px;\n}\n```\n\n## Khi nào dùng?\n\n| Tình huống | Nên dùng |\n|---|---|\n| Layout 1 chiều | Flexbox |\n| Layout 2 chiều | Grid |\n| Navbar, footer | Flexbox |\n| Dashboard | Grid |\n\nKết hợp cả hai sẽ cho kết quả tốt nhất! 🎨',
+    anhDaiDien: 'https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=600&h=400&fit=crop',
+    tacGia: 'Trần Nam Khánh',
+    ngayDang: '2025-04-15',
+    danhSachTheId: ['THE_004'],
+    trangThai: 'daDang',
+    luotXem: 45,
+  },
+  {
+    id: 'BV_005',
+    tieuDe: 'UmiJS - Framework React cho doanh nghiệp',
+    slug: 'umijs-framework-react',
+    tomTat: 'Giới thiệu UmiJS - framework React mạnh mẽ với routing, state management và plugin system.',
+    noiDung: '# UmiJS Framework\n\nUmiJS là một framework React cấp doanh nghiệp.\n\n## Đặc điểm nổi bật\n\n1. **Convention routing** - Tự động tạo route từ thư mục\n2. **Plugin system** - Mở rộng dễ dàng\n3. **useModel** - State management đơn giản\n4. **Ant Design tích hợp** - UI sẵn sàng\n\n## Cấu trúc dự án\n\n```\nsrc/\n  pages/\n    index.tsx\n  models/\n    useModel.ts\n  config/\n    routes.ts\n```\n\n## useModel Hook\n\n```typescript\nexport default function useAppModel() {\n  const [data, setData] = useState([]);\n  return { data, setData };\n}\n```\n\nUmiJS rất phù hợp cho các dự án lớn! 🏢',
+    anhDaiDien: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
+    tacGia: 'Trần Nam Khánh',
+    ngayDang: '2025-04-18',
+    danhSachTheId: ['THE_006', 'THE_001'],
+    trangThai: 'daDang',
+    luotXem: 62,
+  },
+  {
+    id: 'BV_006',
+    tieuDe: 'JavaScript ES6+ - Các tính năng quan trọng',
+    slug: 'javascript-es6-tinh-nang',
+    tomTat: 'Tổng hợp các tính năng mới và quan trọng của JavaScript ES6+.',
+    noiDung: '# JavaScript ES6+\n\n## Arrow Functions\n\n```javascript\nconst chao = (ten) => `Xin chào ${ten}!`;\n```\n\n## Destructuring\n\n```javascript\nconst { ten, tuoi } = nguoiDung;\nconst [a, b, ...rest] = mang;\n```\n\n## Template Literals\n\n```javascript\nconst msg = `Tên: ${ten}, Tuổi: ${tuoi}`;\n```\n\n## Async/Await\n\n```javascript\nasync function layDuLieu() {\n  const res = await fetch("/api/data");\n  return res.json();\n}\n```\n\n## Optional Chaining\n\n```javascript\nconst email = user?.profile?.email;\n```\n\nES6+ giúp viết code sạch và hiện đại hơn! ⚡',
+    anhDaiDien: 'https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=600&h=400&fit=crop',
+    tacGia: 'Trần Nam Khánh',
+    ngayDang: '2025-03-20',
+    danhSachTheId: ['THE_005'],
+    trangThai: 'daDang',
+    luotXem: 210,
+  },
+];

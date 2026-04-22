@@ -84,6 +84,12 @@ export default [
 		icon: 'BookOutlined',
 		component: './GiuaKy',
 	},
+	{
+		path: '/TH07',
+		name: 'TH07',
+		icon: 'ReadOutlined',
+		component: './TH07',
+	},
 
 	// DANH MUC HE THONG
 	// {
