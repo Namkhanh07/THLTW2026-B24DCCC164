@@ -96,6 +96,12 @@ export default [
 		icon: 'HeartOutlined',
 		component: './TH08',
 	},
+	{
+		path: '/TH09',
+		name: 'TH09',
+		icon: 'ProjectOutlined',
+		component: './TH09',
+	},
 
 	// DANH MUC HE THONG
 	// {

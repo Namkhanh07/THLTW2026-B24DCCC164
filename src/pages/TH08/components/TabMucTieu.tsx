@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Card, Row, Col, Progress, Tag, Popconfirm, InputNumber, Button, Drawer, Form, Input, Select, DatePicker, Segmented, Empty, Typography, Space } from 'antd';
-import { PlusOutlined, DeleteOutlined, EditOutlined } from '@ant-design/icons';
+import { Card, Row, Col, Progress, Tag, Popconfirm, InputNumber, Button, Drawer, Form, Input, Select, DatePicker, Segmented, Empty, Space } from 'antd';
+import { PlusOutlined, DeleteOutlined } from '@ant-design/icons';
 import { useModel } from 'umi';
-import moment from 'moment';
 import type { KieuMucTieu } from '../types';
 import {
   DS_LOAI_MUC_TIEU,
